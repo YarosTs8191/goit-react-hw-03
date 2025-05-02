@@ -1,0 +1,31 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.number {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.button {
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #ccc;
+}
