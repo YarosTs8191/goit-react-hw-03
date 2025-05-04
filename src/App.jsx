@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import { nanoid } from "nanoid";
-import "./App.module.css";
+import css from "./App.module.css";
 import ContactList from "./components/ContactList/ContactList";
 import SearchBox from "./components/SearchBox/SearchBox";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -52,14 +52,16 @@ function App() {
 
   return (
     <>
-      <ContactForm onAddContact={handleAddContact} />
+      <div className={css.container}>
+        <ContactForm onAddContact={handleAddContact} />
 
-      <SearchBox value={filter} onChange={handleFilterChange} />
+        <SearchBox value={filter} onChange={handleFilterChange} />
 
-      <ContactList
-        contacts={filteredContacts}
-        onDeleteContact={handleDeleteContact}
-      />
+        <ContactList
+          contacts={filteredContacts}
+          onDeleteContact={handleDeleteContact}
+        />
+      </div>
     </>
   );
 }
