@@ -3,10 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 700px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color: #3b3b3b;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(210, 194, 194, 0.3);
 }

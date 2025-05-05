@@ -31,17 +31,19 @@ const ContactForm = ({ onAddContact }) => {
       onSubmit={handleSubmit}
     >
       <Form className={css.form}>
-        <label>
+        <label className={css.label}>
           Name
-          <Field type="text" name="name" />
+          <Field className={css.input} type="text" name="name" />
           <ErrorMessage name="name" component="div" className={css.error} />
         </label>
-        <label>
+        <label className={css.label}>
           Number
-          <Field type="text" name="number" />
+          <Field className={css.input} type="text" name="number" />
           <ErrorMessage name="number" component="div" className={css.error} />
         </label>
-        <button type="submit">Add contact</button>
+        <button className={css.button} type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
