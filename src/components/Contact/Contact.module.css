@@ -1,10 +1,17 @@
 .grup {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 8px;
   margin-bottom: 8px;
   max-width: 200px;
 }
+
+.icon {
+  font-size: 18px;
+  color: #ccc;
+  margin-right: 10px;
+}
+
 .item {
   display: flex;
   justify-content: space-between;
@@ -20,13 +27,13 @@
 .name {
   font-weight: bold;
   margin: 0;
-  color: #2b2a2a;
+  color: #ccc;
 }
 
 .number {
   margin: 0;
   font-size: 14px;
-  color: #2b2a2a;
+  color: #ccc;
 }
 
 .button {
@@ -35,8 +42,10 @@
   background-color: #a29f9f;
   cursor: pointer;
   color: #2b2a2a;
+  transition: background-color 0.5s;
 }
 
 .button:hover {
-  background-color: #fac7c7;
+  background-color: #cc4343;
+  color: #ccc;
 }

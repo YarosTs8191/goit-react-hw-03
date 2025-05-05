@@ -42,11 +42,11 @@
   font-size: 1rem;
   font-weight: bold;
   color: white;
-  background-color: #465b3c;
+  background-color: #5a754d;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .button:hover {
